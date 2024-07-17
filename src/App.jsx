@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import Background from "./assets/background.avif";
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
@@ -8,7 +9,7 @@ function App() {
   .then((pokemon) => setPokemon(pokemon));
   }, [])
   return (
-    <article></article>
+    <img src={Background} alt="background de fundo" />
   )
 }
 
